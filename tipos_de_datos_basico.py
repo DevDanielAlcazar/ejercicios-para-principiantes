@@ -1,5 +1,5 @@
 
-#Ejercisio 1
+#Ejercicio 1
 '''Escribir un programa que pregunte al usuario por el número de horas trabajadas por dia y el coste por hora. 
 Después debe mostrar por pantalla la paga que le corresponde. Ademas, mostrar si esta trabajando muchas
 horas, regulares, o pocas horas, y tambien calcular el promedio de horas trabajadas por semana y su paga,
