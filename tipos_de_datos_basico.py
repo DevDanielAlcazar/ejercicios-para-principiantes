@@ -50,3 +50,21 @@ def imc_user (user_peso, user_estatura):
 #solicitando que la funcion se imprima en consola
 print(imc_user(user_peso, user_estatura))
 '''
+
+#Ejercicio 3
+'''Escribir un programa que pida al usuario dos números enteros y muestre por pantalla 
+la <n> entre <m> da una division <d> y un resto <r> donde <n> y <m> son los números introducidos
+por el usuario, y <d> y <r> son el cociente y el resto de la división entera respectivamente.
+'''
+#Define las variables a pedir
+numerador = input("Introduce el numero a dividir ")
+divisor = input("Introduce el numero divisor ")
+#funcion de operacion
+def division_resto(numerador,divisor):
+    try: 
+        div = int(numerador) / int(divisor)
+        rest = int(numerador) % int(divisor)
+        return f"El {numerador} entre {divisor} da una division de {round(div,2)} y un resto de {rest}"
+    except:
+        raise Exception (ZeroDivisionError)
+print(division_resto(numerador, divisor))
