@@ -56,6 +56,7 @@ print(imc_user(user_peso, user_estatura))
 la <n> entre <m> da una division <d> y un resto <r> donde <n> y <m> son los números introducidos
 por el usuario, y <d> y <r> son el cociente y el resto de la división entera respectivamente.
 '''
+'''
 #Define las variables a pedir
 numerador = input("Introduce el numero a dividir ")
 divisor = input("Introduce el numero divisor ")
@@ -68,3 +69,41 @@ def division_resto(numerador,divisor):
     except:
         raise Exception (ZeroDivisionError)
 print(division_resto(numerador, divisor))
+'''
+'''
+#Ejercicio 4
+"Escribir un programa que pregunte al usuario una cantidad a invertir, 
+el interés anual y el número de años, y muestre por pantalla el capital obtenido en la inversión."
+
+#Se definen las variables a solicitar (por consola)
+
+inversion_inicial = input("Ingresa la cantidad que deseas invertir: ")
+interes_anual = input("Ingresa la tasa anual de interes: ")
+tiempo_de_inversion = input("Ingresa los años que deseas invertir: ")
+#Funcion operativa
+def calculo_inversion(inversion_inicial, interes_anual, tiempo_de_inversion):
+    calculo = int(inversion_inicial) * (int(interes_anual) * int(tiempo_de_inversion)) // 100
+    return calculo
+print(calculo_inversion(inversion_inicial, interes_anual, tiempo_de_inversion))
+'''
+#Ejercicio 5
+"""Una juguetería tiene mucho éxito en dos de sus productos: payasos y muñecas. Suele hacer venta
+por correo y la empresa de logística les cobra por peso de cada paquete así que deben calcular el
+peso de los payasos y muñecas que saldrán en cada paquete a demanda. Cada payaso pesa 112 g y cada 
+muñeca 75 g. Escribir un programa que lea el número de payasos y muñecas vendidos en el último pedido
+y calcule el peso total del paquete que será enviado."""
+
+#Se definen variables
+peso_payasos: int = 112 
+peso_munecas: int = 75
+cantidad_payasos = input("Ingresa cuantos payasos vendiste: ")
+cantidad_munecas = input("Ingresa cuantas munecas vendiste: ")
+
+#Funcion
+def peso_venta(cantidad_payasos, cantidad_munecas):
+    calc_payasos = int(cantidad_payasos) * peso_payasos
+    calc_munecas = int(cantidad_munecas) * peso_munecas
+    peso_total = calc_payasos + calc_munecas
+    peso_kilos = peso_total / 1000
+    return f"Tu paquete pesa {peso_total} gramos o {peso_kilos} kilos"
+print(peso_venta(cantidad_payasos, cantidad_munecas))
