@@ -109,7 +109,7 @@ def peso_venta(cantidad_payasos, cantidad_munecas):
     return f"Tu paquete pesa {peso_total} gramos o {peso_kilos} kilos"
 print(peso_venta(cantidad_payasos, cantidad_munecas))
 '''
-
+"""
 #Ejercicio 6
 '''Imagina que acabas de abrir una nueva cuenta de ahorros que te ofrece el 4% de interés al año.
 Estos ahorros debido a intereses, que no se cobran hasta finales de año, se te añaden al balance final
@@ -127,3 +127,4 @@ def rendimientos_ahorro(deposito_inicial):
     tercer_a = segundo_a + (int(segundo_a) * 4 / 100)
     return f"Tus ahorros al primer año son {round(primer_a,2)} MNX, al segundo son {round(segundo_a,2)} MNX, y al tercer año son de {round(tercer_a, 2)} MNX"
 print(rendimientos_ahorro(deposito_inicial))
+"""
